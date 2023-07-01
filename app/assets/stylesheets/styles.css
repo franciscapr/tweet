@@ -24,6 +24,17 @@
     color: #ffffff; /* Cambia el color del texto a blanco */
   }
   
+  .custom-card {
+    background-color: #f0f4f79c;
+    border: 2px solid #00acee;
+    border-radius: 15px;
+    padding: 30px;
+  }
+  
 
-
+/*Color y tamaño al icono Tweet*/
+.tweet-icon {
+    color: #00acee;
+    font-size: 30px;
+  }
   

@@ -1,10 +1,11 @@
 <div id="<%= dom_id tweet %>">
-  <div class="card text-center">
+<div id="<%= dom_id tweet %>">
+  <div class="card text-center custom-card">
     <div class="card-header">
-      <%= tweet.id %> <%= tweet.username %>
+      <i class="fab fa-twitter tweet-icon"></i> <%= tweet.id %> <%= tweet.username %>
     </div>
     <div class="card-body">
-    <h5 class="card-title"><%= Faker::Superhero.power %></h5>
+      <h5 class="card-title"><%= Faker::Superhero.power %></h5>
       <p class="card-text">
         <%= tweet.description %>
       </p>
