@@ -1,4 +1,29 @@
 .custom-green-button {
-    background-color: #70b336; 
+    background-color: #00000080; 
   }
+  
+
+.button-group {
+   display: flex;
+ }
+  
+.button-group .btn {
+   margin-right: 20px;
+ }
+  
+
+/*Botones de edicione de tweet*/
+
+.btn-custom-verde {
+    background-color: #2271d8a9; /* Cambia el color de fondo al verde */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+  }
+  
+.btn-custom-azul {
+    background-color: #1d1d1f6e; /* Cambia el color de fondo al azul */
+    color: #ffffff; /* Cambia el color del texto a blanco */
+  }
+  
+
+
   
