@@ -1,0 +1,18 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tweets</h1>
+<%= form_with url: tweets_path, method: :get do |form|%>
+  <%= form.text_field :query_text, placeholder: t('Username search'), value: params[:query_text]%>
+ <%end%>
+<div id="tweets">
+  <% @tweets.each do |tweet| %>
+    <%= render tweet %>
+    <p>
+      <%= link_to "Show this tweet", tweet %>
+    </p>
+  <% end %>
+</div>
+
+<%=raw pagy_nav(@pagy)%>
+
+<%= link_to "New tweet", new_tweet_path %>
