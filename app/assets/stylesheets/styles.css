@@ -38,3 +38,33 @@
     font-size: 30px;
   }
   
+  .button-row {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+  }
+  
+  .button-row button,
+  .button-row a {
+    margin-right: 10px; 
+  }
+  
+
+/*Estilo en el formulario de Nevo tweet*/
+
+.error-message {
+    color: red;
+    /* Estilos de los mensajes de error */
+}
+  
+.form-field {
+    margin-bottom: 20px;
+  }
+  
+  .custom-button {
+    background-color: #00acee; 
+    color: #ffffff;
+  }
+  
+
+  

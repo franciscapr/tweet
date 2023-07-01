@@ -1,6 +1,6 @@
-<%= form_with(model: tweet) do |form| %>
+<%= form_with(model: tweet, class: "custom-form") do |form| %>
   <% if tweet.errors.any? %>
-    <div style="color: red">
+    <div class="error-message">
       <h2><%= pluralize(tweet.errors.count, "error") %> prohibited this tweet from being saved:</h2>
 
       <ul>
@@ -11,17 +11,18 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
+  <div class="form-field">
+    <%= form.label :description %>
     <%= form.text_field :description %>
   </div>
 
-  <div>
-    <%= form.label :username, style: "display: block" %>
+  <div class="form-field">
+    <%= form.label :username %>
     <%= form.text_field :username %>
   </div>
 
-  <div>
-    <%= form.submit %>
-  </div>
+  <div class="form-actions">
+  <%= form.submit "Guardar", class: "btn btn-primary custom-button" %>
+</div>
 <% end %>
+
